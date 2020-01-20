@@ -3,14 +3,25 @@
 
 	"name": "Upwork Filter Extension",
 	"description": "This extension will add additional filters for Upwork",
-	"version": "1.0",
+	"version": "0.1",
 
 	"browser_action": {
-			"default_icon": "icon.png",
-			"default_popup": "popup.html"
+			"default_icon": "icon.png"
+			// "default_popup": "popup.html"
 	},
 
 	"permissions": [
 			"activeTab"
-	]
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"css": ["upfilter.css"],
+			"js": ["thirdParty/jquery-3.3.1.min.js", "upfilter.js"]
+		}
+	],
+	"background": {
+		"scripts": ["thirdParty/jquery-3.3.1.min.js", "background.js"]
+	}
 }
