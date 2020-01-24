@@ -1,0 +1,17 @@
+.ext {
+  margin: 50px auto 0;
+  width: 400px;
+  background-color: #fff;
+  padding: 20px 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: $radius;
+}
+
+.ext__header {
+  h1 {
+		font: rem(20px)/1.2 "Noto Sans", "sans";
+		font-weight: 500;
+		font-style: normal;
+    color: $headings;
+  }
+}

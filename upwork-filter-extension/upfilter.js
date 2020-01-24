@@ -6,6 +6,8 @@ var countryRestrict = [
 	"Ukraine",
 	"Pakistan",
 	"Bulgaria",
+	"Kenya",
+	"Turkey",
 	"Russia"
 ];
 
@@ -16,13 +18,14 @@ var textRestrict = [
 // Don't show if rating lower
 var ratingRestrict = 4.49;
 
-setTimeout(function(){ body(); }, 3000);
+// setTimeout(function(){ body(); }, 3000);
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if( request.message === "clicked_browser_action" ) {
 			// console.log('Extension Clicked');
 			body();
+			setInterval(function(){ body(); }, 10000);
     }
   }
 );
