@@ -1,0 +1,93 @@
+$col-pr: #1a202c;
+$col-sec: #212835;
+$p: #2d3748;
+$s: #4a5568;
+$col-pr-light: #718096;
+$col-lgrey: #a0aec0;
+$col-acc: #9b2c2c;
+$col-acc-hov: #bc2f2c;
+$col-plates: #edf2f7;
+
+$body-font-size: 20px;
+
+//-------------------------
+//-- Must Have Styles Start -->
+//-------------------------
+* {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $body-font-size;
+  font-family: "HK Gothic", "system";
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.button {
+  -webkit-appearance: none;
+}
+
+p:empty {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.dim:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 32, 44, 0.5);
+  z-index: 1;
+}
+
+.readmore {
+  display: block;
+  overflow: hidden;
+  transition: 0.4 ease-in-out;
+  p:last-child {
+    margin: 0;
+  }
+  .btn-link:last-child {
+    margin-bottom: 20px;
+  }
+  margin-bottom: 20px;
+}
+//-------------------------
+//-- Must Have Styles End -->
+//------ ¯\_(ツ)_/¯ ------

@@ -1,0 +1,139 @@
+.footer {
+	padding: 120px 0;
+	background-color: $col-pr;
+	position: relative;
+	
+	&__logo {
+		display: block;
+		margin-bottom: 70px;
+	}
+
+	.footer__line {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.social {
+		ul { 
+			margin: 0 0 30px 0;
+			padding: 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				margin-left: 0;
+				margin-right: 40px;
+				&:last-child { margin-right: 0; }
+				a {
+					font: rem(20px) / rem(30px) 'HK Gothic', sans-serif;
+					font-style: normal;
+					font-weight: 600;
+					letter-spacing: 0.7px;
+					color: $col-acc;
+					opacity: .75;
+					text-decoration: none;
+					transition: .2s ease-in-out;
+					&:hover {
+						opacity: 1;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	&__copyright {
+		font: rem(20px) / rem(30px) 'HK Gothic', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.7px;
+		color: #3C414C;
+	}
+
+
+	&__primary_menu {
+		ul { 
+			margin: 0 0 30px 0;
+			padding: 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				margin-left: 0;
+				margin-right: 40px;
+				&:last-child { margin-right: 0; }
+				a {
+					font: rem(20px) / rem(30px) 'HK Gothic', sans-serif;
+					font-style: normal;
+					font-weight: 600;
+					letter-spacing: 0.7px;
+					color: rgba(255,255,255,.75);
+					text-decoration: none;
+					transition: .2s ease-in-out;
+					&:hover {
+						color: rgba(255,255,255,1);
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+
+	&__secondary_menu {
+		ul { 
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				margin-left: 0;
+				margin-right: 40px;
+				&:last-child { margin-right: 0; }
+				a {
+					font: rem(20px) / rem(30px) 'HK Gothic', sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					letter-spacing: 0.7px;
+					color: #fff;
+					opacity: .15;
+					text-decoration: none;
+					transition: .2s ease-in-out;
+					&:hover {
+						opacity: .3;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+
+	.scroll_to_top {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 191px;
+		height: 120px;
+		background-color: $p;
+		transition: .2s ease-in-out;
+		&:hover {
+			background-color: #424e63;
+			cursor: pointer;
+			.icon_to_top {
+				stroke: $col-acc-hov;
+			}
+
+		}
+		.scroll_button {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.icon_to_top {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

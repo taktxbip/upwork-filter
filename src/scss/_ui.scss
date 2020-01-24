@@ -1,0 +1,64 @@
+//-------------------------
+//-- Table Start -->
+//-------------------------
+table {
+  width: 100%;
+  border-collapse: collapse;
+  th {
+    font: rem(16px) / rem(32px) "Hanken Grotesk", "system";
+    font-style: normal;
+    font-weight: 600;
+    padding: 0.6rem;
+    color: #fff;
+    border: 1px solid #e1e6ed !important;
+    background: none !important;
+  }
+  tr td:first-child,
+  tr th:first-child {
+    font-weight: 600;
+    text-align: left;
+  }
+  thead {
+    background-color: $col-pr;
+  }
+  tfoot {
+    background-color: $col-plates;
+    th {
+      color: $col-pr;
+    }
+  }
+  tr {
+    td {
+      padding: 0.6rem;
+      font: rem(16px) / rem(32px) "Hanken Grotesk", "system";
+      text-align: center;
+      color: $p;
+      font-style: normal;
+      font-weight: 400;
+      border: 1px solid #e1e6ed !important;
+    }
+  }
+  td[colspan] {
+    background-color: $col-plates !important;
+  }
+  caption {
+    display: none;
+  }
+}
+
+//-------------------------
+//-- Video Start -->
+//-------------------------
+.video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
+  position: relative;
+  z-index: 1;
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+}

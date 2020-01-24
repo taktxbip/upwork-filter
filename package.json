@@ -1,0 +1,30 @@
+{
+  "name": "modulesapp",
+  "version": "1.0.0",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-inject": "^5.0.4",
+    "gulp-livereload": "^4.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-symbols": "^3.2.3",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^3.1.6",
+    "postcss-assets": "^5.0.0",
+    "postcss-browser-reporter": "^0.6.0",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-short": "^5.0.0"
+  }
+}

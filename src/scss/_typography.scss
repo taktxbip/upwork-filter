@@ -1,0 +1,81 @@
+
+h1 {
+  font: rem(64px) / 1.2 'HK Gothic', 'system';
+  color: $col-acc;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 55px;
+}
+
+
+h2 {
+  font: rem(48px) / 1.2 'HK Gothic', 'system';
+  color: $col-acc;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+h3 {
+  font: rem(36px) / 1.2 'HK Gothic', 'system';
+  color: $col-acc;
+  font-style: normal;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 40px;
+}
+
+
+h4 {
+  font: rem(30px) / 1.2 'HK Gothic', 'system';
+  color: $col-acc;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+h5 {
+  font: rem(30px) / 1.2 'HK Gothic', 'system';
+  color: $col-acc;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+h6 {
+  font: rem(20px) / 1.2 'HK Gothic', 'system';
+  color: $col-acc;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+p {
+  font: rem(20px) / rem(32px) 'Hanken Grotesk', 'system';
+  color: $p;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.smaller {
+    font-size: rem(16px);
+    line-height: rem(24px);
+  }
+
+a {
+  color: $col-acc;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+
+.tabs {
+  font: rem(24px) / rem(30px) 'HK Gothic', 'system';
+  color: $col-pr;
+  font-style: normal;
+  font-weight: 600;
+}

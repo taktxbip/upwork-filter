@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-display: swap;
+  src: url("../fonts/HankenGroteskRegular.eot");
+  src: url("../fonts/HankenGroteskRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/HankenGroteskRegular.woff2") format("woff2"),
+    url("../fonts/HankenGroteskRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-display: swap;
+  src: url("../fonts/HankenGroteskSemiBold.eot");
+  src: url("../fonts/HankenGroteskSemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/HankenGroteskSemiBold.woff2") format("woff2"),
+    url("../fonts/HankenGroteskSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HK Gothic";
+  font-display: swap;
+  src: url("../fonts/HKGothicRegular.eot");
+  src: url("../fonts/HKGothicRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HKGothicRegular.woff2") format("woff2"),
+    url("../fonts/HKGothicRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HK Gothic";
+  font-display: swap;
+  src: url("../fonts/HKGothicSemiBold.eot");
+  src: url("../fonts/HKGothicSemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HKGothicSemiBold.woff2") format("woff2"),
+    url("../fonts/HKGothicSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HK Gothic";
+  font-display: swap;
+  src: url("../fonts/HKGothicBlack.eot");
+  src: url("../fonts/HKGothicBlack.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HKGothicBlack.woff2") format("woff2"),
+    url("../fonts/HKGothicBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "system";
+  font-style: italic;
+  font-weight: 300;
+  src: local(".SFNSText-LightItalic"),
+    local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"),
+    local("Segoe UI Light Italic"), local("Ubuntu Light Italic"),
+    local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+  font-family: "system";
+  font-style: normal;
+  font-weight: 400;
+  src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"),
+    local(".LucidaGrandeUI"), local("Segoe UI"), local("Ubuntu"),
+    local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+  font-family: "system";
+  font-style: italic;
+  font-weight: 400;
+  src: local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"),
+    local(".LucidaGrandeUI"), local("Segoe UI Italic"), local("Ubuntu Italic"),
+    local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+  font-family: "system";
+  font-style: normal;
+  font-weight: 500;
+  src: local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"),
+    local(".LucidaGrandeUI"), local("Segoe UI Semibold"), local("Ubuntu Medium"),
+    local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+  font-family: "system";
+  font-style: italic;
+  font-weight: 500;
+  src: local(".SFNSText-MediumItalic"),
+    local(".HelveticaNeueDeskInterface-MediumItalicP4"),
+    local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"),
+    local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"),
+    local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+  font-family: "system";
+  font-style: normal;
+  font-weight: 700;
+  src: local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"),
+    local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"),
+    local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+  font-family: "system";
+  font-style: italic;
+  font-weight: 700;
+  src: local(".SFNSText-BoldItalic"),
+    local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"),
+    local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"),
+    local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}

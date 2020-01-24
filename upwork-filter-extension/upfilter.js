@@ -5,6 +5,7 @@ var countryRestrict = [
 	"Slovenia",
 	"Ukraine",
 	"Pakistan",
+	"Bulgaria",
 	"Russia"
 ];
 
