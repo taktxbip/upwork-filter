@@ -4,10 +4,10 @@ var siteCSS = "",
   siteUrl = "";
 
 const jsFiles = [
-  "./src/js/libs/jquery.matchHeight-min.js",
-  "./src/js/libs/jquery.fancybox.js",
-  "./src/js/libs/readmore.min.js",
-  "./src/js/libs/slick.min.js",
+  // "./src/js/libs/jquery.matchHeight-min.js",
+  // "./src/js/libs/jquery.fancybox.js",
+  // "./src/js/libs/readmore.min.js",
+  // "./src/js/libs/slick.min.js",
   "./src/js/custom/common.js"
 ];
 

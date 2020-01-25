@@ -1,0 +1,96 @@
+.btn {
+  font: rem(13px) / 50px "Noto Sans", "system";
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: $radius;
+  height: 50px;
+  display: block;
+  transition: 0.2s ease-in-out;
+  &.secondary {
+    background-color: #fff;
+    &:hover {
+      color: $green-active;
+      cursor: pointer;
+    }
+  }
+  &.primary {
+    background-color: $green-active;
+    color: #fff;
+    &:hover {
+      cursor: pointer;
+      background-color: $green-hover;
+    }
+  }
+}
+
+.filters_wraper {
+  font: rem(13px) / rem(18px) "Noto Sans", "system";
+  font-weight: 500;
+  font-style: normal;
+  display: block;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 0px;
+  &:hover {
+    cursor: pointer;
+    color: $green-active;
+    &:after {
+      border-bottom: 1px solid $green-active;
+      border-left: 1px solid $green-active;
+    }
+  }
+  &.active {
+    margin-bottom: 20px;
+    &:after {
+      transform: rotate(135deg);
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.filters_wraper:after {
+  margin-left: 20px;
+  margin-bottom: 3px;
+  transform: rotate(-45deg);
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-bottom: 1px solid $headings;
+  border-left: 1px solid $headings;
+  transition: 0.2s ease-in-out;
+}
+
+input {
+	padding: 0 15px;
+  background: $plates;
+  border: 1px solid $lines;
+  box-sizing: border-box;
+  border-radius: $radius;
+  height: 34px;
+  font: rem(13px) / 34px "Noto Sans", "system";
+  font-style: normal;
+  font-weight: normal;
+	color: $headings;
+	width: 100%;
+}
+
+label {
+  display: block;
+  font: rem(13px) / rem(18px) "Noto Sans", "system";
+  font-style: normal;
+  font-weight: 500;
+	color: $headings;
+	margin-bottom: 5px;
+}
+
+.form_row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	.half {
+		width: calc(50% - 10px);
+	}
+}

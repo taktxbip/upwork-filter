@@ -2,16 +2,42 @@
   margin: 50px auto 0;
   width: 400px;
   background-color: #fff;
-  padding: 20px 30px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: $radius;
 }
 
 .ext__header {
+	padding: 20px 30px;
   h1 {
 		font: rem(20px)/1.2 "Noto Sans", "sans";
 		font-weight: 500;
 		font-style: normal;
-    color: $headings;
-  }
+		color: $headings;
+		margin: 0 0 5px 0;
+	}
+	p {
+		margin: 0;
+	}
+}
+
+
+.ext__body {
+	padding: 20px 30px;
+	background-color: $plates;
+	border-top: 1px solid $lines;
+	border-bottom: 1px solid $lines;
+}
+
+.ext__footer {
+	padding: 20px 30px;
+	padding-top: 20px;
+}
+
+.main_filters {
+	overflow: hidden;
+	max-height: 0;
+	transition: 0.2s ease-in-out;
+	&.active {
+		max-height: 600px;
+	}
 }

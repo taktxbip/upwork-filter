@@ -1,28 +1,25 @@
-
 h1 {
-  font: rem(64px) / 1.2 'HK Gothic', 'system';
+  font: rem(64px) / 1.2 "HK Gothic", "system";
   color: $headings;
   font-style: normal;
   font-weight: 600;
   margin-bottom: 55px;
 }
 
-
 h2 {
-  font: rem(48px) / 1.2 'HK Gothic', 'system';
+  font: rem(48px) / 1.2 "HK Gothic", "system";
   color: $headings;
   font-style: normal;
   font-weight: 600;
 }
 
-
-
 p {
-  font: rem(20px) / rem(32px) 'Hanken Grotesk', 'system';
+  font: rem(16px) / rem(24px) "Noto Sans", "system";
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 35px;
+  &.small {
+    font-size: rem(12px);
+    line-height: rem(16px);
+    color: $text-secondary;
+  }
 }
-
-
-

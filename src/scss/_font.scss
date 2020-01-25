@@ -1,59 +1,34 @@
 @font-face {
-  font-family: "Hanken Grotesk";
+  font-family: "Noto Sans";
   font-display: swap;
-  src: url("../fonts/HankenGroteskRegular.eot");
-  src: url("../fonts/HankenGroteskRegular.eot?#iefix")
+  src: url("../fonts/NotoSansRegular.eot");
+  src: url("../fonts/NotoSansRegular.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/HankenGroteskRegular.woff2") format("woff2"),
-    url("../fonts/HankenGroteskRegular.woff") format("woff");
+    url("../fonts/NotoSansRegular.woff2") format("woff2"),
+    url("../fonts/NotoSansRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
+
 @font-face {
-  font-family: "Hanken Grotesk";
+  font-family: "Noto Sans";
   font-display: swap;
-  src: url("../fonts/HankenGroteskSemiBold.eot");
-  src: url("../fonts/HankenGroteskSemiBold.eot?#iefix")
+  src: url("../fonts/NotoSansMedium.eot");
+  src: url("../fonts/NotoSansMedium.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/HankenGroteskSemiBold.woff2") format("woff2"),
-    url("../fonts/HankenGroteskSemiBold.woff") format("woff");
-  font-weight: 600;
+    url("../fonts/NotoSansMedium.woff2") format("woff2"),
+    url("../fonts/NotoSansMedium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "HK Gothic";
-  font-display: swap;
-  src: url("../fonts/HKGothicRegular.eot");
-  src: url("../fonts/HKGothicRegular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/HKGothicRegular.woff2") format("woff2"),
-    url("../fonts/HKGothicRegular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "HK Gothic";
-  font-display: swap;
-  src: url("../fonts/HKGothicSemiBold.eot");
-  src: url("../fonts/HKGothicSemiBold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/HKGothicSemiBold.woff2") format("woff2"),
-    url("../fonts/HKGothicSemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "HK Gothic";
-  font-display: swap;
-  src: url("../fonts/HKGothicBlack.eot");
-  src: url("../fonts/HKGothicBlack.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/HKGothicBlack.woff2") format("woff2"),
-    url("../fonts/HKGothicBlack.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
+
+
+
+
 
 @font-face {
   font-family: "system";
