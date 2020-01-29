@@ -17,11 +17,24 @@
   }
   &.primary {
     background-color: $green-active;
-    color: #fff;
+		color: #fff;
+		&.disabled {
+			background-color: $disabled-plate;
+			color: $disabled-text;
+			box-shadow: none;
+			&:hover {
+				cursor: default;
+				background-color: $disabled-plate;
+				color: $disabled-text;
+			}
+		}
     &:hover {
       cursor: pointer;
       background-color: $green-hover;
-    }
+		}
+		&.do-action {
+			background-color: tomato;
+		}
   }
 }
 
@@ -68,7 +81,7 @@ input {
   border: 1px solid $lines;
   box-sizing: border-box;
   border-radius: $radius;
-  height: 34px;
+  height: 40px;
   font: rem(13px) / 34px "Noto Sans", "system";
   font-style: normal;
   font-weight: normal;

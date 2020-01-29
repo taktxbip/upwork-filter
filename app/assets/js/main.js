@@ -76,18 +76,45 @@ console.log(upwork.textRestrict);
 
 $(document).ready(function() {
 
-	$('.filters_wraper').click( function(){
-			$(this).toggleClass('active');
-			$(this).closest('.ext__body').find('.main_filters').toggleClass('active');
+	$('.filters_wraper').click( function() {
+		if ( $(this).hasClass('active') ) {
+			$(this).removeClass('active');
+			$(this).closest('.ext__body').find('.main_filters').removeClass('active');
+			$('.ext__footer .disabled').removeClass('disabled');
+		}
+		else {
+			$(this).addClass('active');
+			$(this).closest('.ext__body').find('.main_filters').addClass('active');
+			$('.ext__footer .btn-action').addClass('disabled');
+		}
+	});
+
+	$('.btn-save').click( function() { 
+		$('.active').removeClass('active');
+		$('.ext__footer .disabled').removeClass('disabled');
+	});
+
+	$('.btn-action').click( function() { 
+		if ( $(this).hasClass('do-action') ) {
+			$(this).removeClass('do-action');
+			$(this).text('Hide Contracts');
+		}
+		else {
+			$(this).addClass('do-action');
+			$(this).text('Extended Filters Enabled');
+		}
 	});
 
 
-
 	new SlimSelect({
-				select: '#countries'
+				select: '#countries',
+				placeholder: 'Placeholder Text Here',
+				showSearch: true,
+				searchText: 'Sorry couldnt find anything',
+				onChange: (info) => {
+					console.log(info);
+				}
 		})
-		
-
 	
 
 });

@@ -256,14 +256,12 @@
   margin: 0;
 }
 .ss-content .ss-search input {
-  display: inline-flex;
   font-size: inherit;
-  line-height: inherit;
-  flex: 1 1 auto;
   width: 100%;
-  min-width: 0;
-  padding: 10px 15px;
-  margin: 0;
+	display: block;
+  padding: 15px 15px;
+	margin: 0;
+	line-height: 34px;
   border: none;
   border-bottom: 1px solid $lines;
   border-radius: 0;
@@ -300,6 +298,7 @@
   padding-top: 0;
 }
 .ss-content .ss-list {
+	padding: 10px 0;
   max-height: 400px;
   overflow-x: hidden;
   overflow-y: auto;

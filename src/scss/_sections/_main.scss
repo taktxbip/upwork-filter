@@ -34,10 +34,11 @@
 }
 
 .main_filters {
-	// overflow: hidden;
+	overflow: hidden;
 	max-height: 0;
 	transition: 0.2s ease-in-out;
 	&.active {
+		overflow: visible;
 		max-height: 600px;
 	}
 }
@@ -60,5 +61,22 @@
 		transform: translate(50px, 0);
 		width: 5px;
 		background-color: $lines;
+	}
+}
+
+.credentials {
+	margin-top: 10px;
+	display: block;
+	font: rem(11px)/1.4 "Noto Sans", "sans";
+	font-style: normal;
+	font-weight: 400;
+	color: $text-secondary;
+	a {
+		color: $text-secondary;
+		transition: .2s ease-in-out;
+		&:hover {
+			cursor: pointer;
+			color: $green-active;
+		}
 	}
 }
