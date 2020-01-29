@@ -76,8 +76,14 @@ input {
 	width: 100%;
 }
 
+.ss-main {
+	display: block;
+	width: 100%;
+}
+
 label {
-  display: block;
+	display: block;
+	width: 100%;
   font: rem(13px) / rem(18px) "Noto Sans", "system";
   font-style: normal;
   font-weight: 500;
@@ -92,5 +98,8 @@ label {
 	margin-bottom: 15px;
 	.half {
 		width: calc(50% - 10px);
+	}
+	.full {
+		width: 100%;
 	}
 }

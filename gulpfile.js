@@ -4,10 +4,7 @@ var siteCSS = "",
   siteUrl = "";
 
 const jsFiles = [
-  // "./src/js/libs/jquery.matchHeight-min.js",
-  // "./src/js/libs/jquery.fancybox.js",
-  // "./src/js/libs/readmore.min.js",
-  // "./src/js/libs/slick.min.js",
+  "./src/js/libs/slimselect.min.js",
   "./src/js/custom/common.js"
 ];
 
@@ -52,7 +49,7 @@ gulp.task("js", function() {
     .src(jsFiles)
     .pipe(sourcemaps.init())
     .pipe(concat("main.js"))
-    .pipe(uglify({ toplevel: true }))
+    // .pipe(uglify({ toplevel: true }))
     .pipe(gulp.dest("./app/assets/js"))
     .pipe(connect.reload());
 });
