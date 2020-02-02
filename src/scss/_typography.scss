@@ -1,22 +1,7 @@
-h1 {
-  font: rem(64px) / 1.2 "HK Gothic", "system";
-  color: $headings;
+.ext p {
+  font: rem(16px) / rem(24px) "Noto Sans HK", "sans";
   font-style: normal;
-  font-weight: 600;
-  margin-bottom: 55px;
-}
-
-h2 {
-  font: rem(48px) / 1.2 "HK Gothic", "system";
-  color: $headings;
-  font-style: normal;
-  font-weight: 600;
-}
-
-p {
-  font: rem(16px) / rem(24px) "Noto Sans", "system";
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   &.small {
     font-size: rem(12px);
     line-height: rem(16px);

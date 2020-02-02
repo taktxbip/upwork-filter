@@ -1,5 +1,5 @@
-.btn {
-  font: rem(13px) / 50px "Noto Sans", "system";
+.ext_btn {
+  font: rem(13px) / 50px "Noto Sans HK", "sans";
   font-style: normal;
   font-weight: 500;
   text-align: center;
@@ -7,7 +7,9 @@
   border-radius: $radius;
   height: 50px;
   display: block;
-  transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	z-index: 10;
+	position: relative;
   &.secondary {
     background-color: #fff;
     &:hover {
@@ -17,29 +19,30 @@
   }
   &.primary {
     background-color: $green-active;
-		color: #fff;
-		&.disabled {
-			background-color: $disabled-plate;
-			color: $disabled-text;
-			box-shadow: none;
-			&:hover {
-				cursor: default;
-				background-color: $disabled-plate;
-				color: $disabled-text;
-			}
-		}
+    color: #fff;
+    &.disabled {
+      background-color: $disabled-plate;
+      color: $disabled-text;
+      box-shadow: none;
+      &:hover {
+        cursor: default;
+        background-color: $disabled-plate;
+        color: $disabled-text;
+      }
+    }
     &:hover {
       cursor: pointer;
       background-color: $green-hover;
-		}
-		&.do-action {
+    }
+    &.do-action {
 			background-color: tomato;
-		}
+    }
   }
 }
 
+
 .filters_wraper {
-  font: rem(13px) / rem(18px) "Noto Sans", "system";
+  font: rem(12px) / rem(18px) "Noto Sans HK", "sans";
   font-weight: 500;
   font-style: normal;
   display: block;
@@ -75,44 +78,70 @@
   transition: 0.2s ease-in-out;
 }
 
-input {
-	padding: 0 15px;
+.ext input {
+  padding: 0 15px;
   background: $plates;
+  background: #fff;
   border: 1px solid $lines;
   box-sizing: border-box;
   border-radius: $radius;
   height: 40px;
-  font: rem(13px) / 34px "Noto Sans", "system";
+  font: rem(13px) / 34px "Noto Sans HK", "sans";
   font-style: normal;
   font-weight: normal;
-	color: $headings;
+  color: $headings;
 	width: 100%;
+	transition: .2s ease-in-out;
+	&:hover {
+		border: 1px solid $green-bright;
+	}
 }
 
 .ss-main {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
-label {
-	display: block;
-	width: 100%;
-  font: rem(13px) / rem(18px) "Noto Sans", "system";
+.ext label {
+  display: block;
+  width: 100%;
+  font: rem(11px) / rem(18px) "Noto Sans HK", "sans";
   font-style: normal;
-  font-weight: 500;
-	color: $headings;
-	margin-bottom: 5px;
+  font-weight: 400;
+  color: $headings;
+  margin-bottom: 5px;
 }
 
-.form_row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 15px;
-	.half {
-		width: calc(50% - 10px);
+.ext .form_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  .half {
+    width: calc(50% - 10px);
+  }
+  .full {
+    width: 100%;
+  }
+}
+
+#error_message {
+  font: rem(12px) / rem(16px) "Noto Sans HK", "sans";
+  font-style: normal;
+  font-weight: 300;
+	color: #df4a4a;
+	display: block;
+	margin-bottom: 0;
+	max-height: 0;
+	opacity: 0;
+	transition: .2s ease-in-out;
+	z-index: 1;
+	a {
+		color: #df4a4a;
 	}
-	.full {
-		width: 100%;
+	&.show {
+		opacity: 1;
+		max-height: 70px;
+		margin-bottom: 10px;
 	}
 }

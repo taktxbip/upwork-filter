@@ -4,7 +4,6 @@ var siteCSS = "",
   siteUrl = "";
 
 const jsFiles = [
-  "./src/js/libs/slimselect.min.js",
   "./src/js/custom/common.js"
 ];
 
@@ -71,16 +70,6 @@ gulp.task("clean", function() {
 gulp.task("html", function() {
   return gulp
     .src("src/*.html")
-    .pipe(
-      inject(gulp.src("./app/assets/svg/svg-symbols.svg"), {
-        starttag: "<!-- inject:svg -->",
-        relative: true,
-        transform: function(filePath, file) {
-          // return file contents as string
-          return file.contents.toString("utf8");
-        }
-      })
-    )
     .pipe(gulp.dest("app"))
     .pipe(connect.reload());
 });
@@ -120,18 +109,11 @@ gulp.task("css", function() {
       .pipe(rename("bundle.min.css"))
       // .pipe(sourcemaps.write())
       .pipe(gulp.dest("./app/assets//css"))
-      // .pipe(gulp.dest('wp/wp-content/themes/windfall/assets//css'))
+      .pipe(gulp.dest('../upwork-filter-extension'))
       .pipe(connect.reload())
   );
 });
 
-// Fonts
-gulp.task("fonts", function() {
-  return gulp
-    .src("src/fonts/**/*.*")
-    .pipe(gulp.dest("./app/assets/fonts/"))
-    .pipe(connect.reload());
-});
 
 // Images
 gulp.task("images", function() {
@@ -147,8 +129,6 @@ gulp.task("watch", function() {
   gulp.watch("src/js/**/*.*", gulp.series("js"));
   gulp.watch("src/*.html", gulp.series("html"));
   gulp.watch("src/img/**/*.*", gulp.series("images"));
-  gulp.watch("src/fonts/**/*.*", gulp.series("fonts"));
-  gulp.watch("src/svg/**/*.*", gulp.series("svg-sprites"));
 });
 
 // Watch Injection
@@ -213,11 +193,9 @@ gulp.task(
   "default",
   gulp.parallel(
     "connect",
-    "svg-sprites",
     "html",
     "css",
     "js",
-    "fonts",
     "images",
     "watch"
   )
@@ -226,8 +204,7 @@ gulp.task(
   "build",
   gulp.series(
     "clean",
-    "svg-sprites",
-    gulp.parallel("connect", "html", "css", "js", "fonts", "images", "watch")
+    gulp.parallel("connect", "html", "css", "js", "images", "watch")
   )
 );
 

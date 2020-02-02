@@ -96,7 +96,7 @@
   padding: 5px;
   border: 1px solid $lines;
   border-radius: $radius;
-  background: none;
+  background: #fff;
   outline: 0;
   box-sizing: border-box;
 	transition: background-color 0.2s;
@@ -167,7 +167,8 @@
   display: flex;
   user-select: none;
 	align-items: center;
-	font: rem(11px)/1.2 "Noto Sans", "sans";
+	font: rem(11px)/1.2 "Noto Sans HK", "sans";
+	font-weight: 300;
   padding: 3px 5px;
   margin: 3px 5px 3px 0;
   color: $headings;
@@ -189,7 +190,7 @@
 }
 .ss-main .ss-multi-selected .ss-add {
 	width: 34px;
-	height: 100%;
+	height: 27px;
 	background-color: #fff;
 	position: relative;
 }
@@ -197,27 +198,43 @@
 
 .ss-main .ss-multi-selected .ss-add .ss-plus {
 	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	border-radius: 50%;
+	display: block;
+	transition: .2s ease-in-out;
+}
+
+.ss-main .ss-multi-selected .ss-add .ss-plus:before,
+.ss-main .ss-multi-selected .ss-add .ss-plus:after {
+	content: "";
+	display: block;
+  background: $headings;
+  position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	transition: .2s ease-in-out;
 }
 
 .ss-main .ss-multi-selected .ss-add .ss-plus:before {
-	content: "";
-  background: $headings;
-  position: absolute;
-  height: 7px;
-  width: 1px;
+  height: 10px;
+	width: 2px;
 }
 .ss-main .ss-multi-selected .ss-add .ss-plus:after {
-	content: "";
-	background: $headings;
-  position: absolute;
   height: 2px;
-  width: 10px;
-  left: -4px;
-  top: 4px;
+	width: 10px;
 }
+
+.ss-multi-selected:hover {
+	.ss-add .ss-plus:before,
+	.ss-add .ss-plus:after {
+		background: $green-hover;
+	}
+} 
+
 .ss-main .ss-multi-selected .ss-add .ss-plus.ss-cross {
   transform: rotate(45deg);
 }
@@ -245,7 +262,7 @@
   display: flex;
   flex-direction: row;
 	padding: 0;
-	height: 34px;
+	margin-bottom: 10px;
 	line-height: 34;
 }
 .ss-content .ss-search.ss-hide,
@@ -256,7 +273,9 @@
   margin: 0;
 }
 .ss-content .ss-search input {
-  font-size: inherit;
+	font: rem(12px)/1.4 "Noto Sans HK", "sans";
+	font-weight: 300;
+	font-style: normal;
   width: 100%;
 	display: block;
   padding: 15px 15px;
@@ -298,8 +317,8 @@
   padding-top: 0;
 }
 .ss-content .ss-list {
-	padding: 10px 0;
-  max-height: 400px;
+	padding: 0 0 10px;
+  max-height: 200px;
   overflow-x: hidden;
   overflow-y: auto;
   text-align: left;
@@ -319,10 +338,10 @@
   background-color: #5897fb;
 }
 .ss-content .ss-list .ss-option {
-	font: rem(14px)/1.4 "Noto Sans", "sans";
-	font-weight: 400;
+	font: rem(12px)/1.4 "Noto Sans HK", "sans";
+	font-weight: 300;
 	font-style: normal;
-  padding: 6px 15px;
+  padding: 4px 15px;
   cursor: pointer;
   user-select: none;
 }
